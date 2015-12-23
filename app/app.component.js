@@ -28,7 +28,8 @@ System.register(['angular2/core'], function(exports_1) {
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'my-app',
-                        template: "\n      <h2>My Heroes</h2>\n      <ul class=\"heroes\">\n        <li *ngFor=\"#hero of heroes\">\n          <span class=\"badge\">{{hero.id}}</span> {{hero.name}}\n        </li>\n      </ul>\n      <h1>{{title}}</h1>\n      <h2>{{hero.name}} details!</h2>\n      <div><label>id: </label>{{hero.id}}</div>\n      <div>\n        <label>name: </label>\n        <div><input [(ngModel)]=\"hero.name\" placeholder=\"name\"></div>\n      </div>"
+                        template: "\n      <h2>My Heroes</h2>\n      <ul class=\"heroes\">\n        <li *ngFor=\"#hero of heroes\">\n          <span class=\"badge\">{{hero.id}}</span> {{hero.name}}\n        </li>\n      </ul>\n      <h1>{{title}}</h1>\n      <h2>{{hero.name}} details!</h2>\n      <div><label>id: </label>{{hero.id}}</div>\n      <div>\n        <label>name: </label>\n        <div><input [(ngModel)]=\"hero.name\" placeholder=\"name\"></div>\n      </div>",
+                        styles: ["\n      .heroes {list-style-type: none; margin-left: 1em; padding: 0; width: 10em;}\n      .heroes li { cursor: pointer; position: relative; left: 0; transition: all 0.2s ease; }\n      .heroes li:hover {color: #369; background-color: #EEE; left: .2em;}\n      .heroes .badge {\n        font-size: small;\n        color: white;\n        padding: 0.1em 0.7em;\n        background-color: #369;\n        line-height: 1em;\n        position: relative;\n        left: -1px;\n        top: -1px;\n      }\n      .selected { background-color: #EEE; color: #369; }\n    "]
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);
