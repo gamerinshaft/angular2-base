@@ -1,5 +1,10 @@
 import {Component} from 'angular2/core';
 
+interface Hero {
+  id: number;
+  name: string;
+}
+
 @Component({
     selector: 'my-app',
     template:`
@@ -8,7 +13,7 @@ import {Component} from 'angular2/core';
       <div><label>id: </label>{{hero.id}}</div>
       <div>
         <label>name: </label>
-        <div><input value="{{hero.name}}" placeholder="name"></div>
+        <div><input [(ngModel)]="hero.name" placeholder="name"></div>
       </div>`
 })
 
@@ -18,11 +23,5 @@ export class AppComponent {
     id: 1,
     name: 'Windstorm'
   };
-
 }
 
-
-interface Hero {
-  id: number;
-  name: string;
-}
