@@ -23,6 +23,7 @@ System.register(['angular2/core'], function(exports_1) {
                         id: 1,
                         name: 'Windstorm'
                     };
+                    this.heroes = HEROES;
                 }
                 AppComponent = __decorate([
                     core_1.Component({
@@ -46,7 +47,6 @@ System.register(['angular2/core'], function(exports_1) {
                 { "id": 19, "name": "Magma" },
                 { "id": 20, "name": "Tornado" }
             ];
-            heroes = HEROES;
         }
     }
 });
