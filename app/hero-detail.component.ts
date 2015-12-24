@@ -1,4 +1,5 @@
 import {Component} from 'angular2/core';
+import {Hero} from './hero';
 
 @Component({
   selector: 'my-hero-detail',
@@ -15,4 +16,5 @@ import {Component} from 'angular2/core';
 
 export class HeroDetailComponent({
   function(){console.log("HeroDetailComponent")}
+  public hero: Hero;
 })
