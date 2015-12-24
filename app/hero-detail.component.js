@@ -22,6 +22,7 @@ System.register(['angular2/core'], function(exports_1) {
                 HeroDetailComponent = __decorate([
                     core_1.Component({
                         selector: 'my-hero-detail',
+                        template: "\n    <div *ngIf=\"selectedHero\">\n      <h2>{{selectedHero.name}} details!</h2>\n      <div><label>id: </label>{{selectedHero.id}}</div>\n      <div>\n        <label>name: </label>\n        <div><input [(ngModel)]=\"selectedHero.name\" placeholder=\"name\"></div>\n      </div>\n    </div>"
                     }), 
                     __metadata('design:paramtypes', [])
                 ], HeroDetailComponent);
