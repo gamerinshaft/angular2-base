@@ -4,17 +4,17 @@ import {Hero} from './hero';
 @Component({
   selector: 'my-hero-detail',
   template:`
-    <div *ngIf="selectedHero">
-      <h2>{{selectedHero.name}} details!</h2>
-      <div><label>id: </label>{{selectedHero.id}}</div>
+    <div *ngIf="hero">
+      <h2>{{hero.name}} details!</h2>
+      <div><label>id: </label>{{hero.id}}</div>
       <div>
         <label>name: </label>
-        <div><input [(ngModel)]="selectedHero.name" placeholder="name"></div>
+        <div><input [(ngModel)]="hero.name" placeholder="name"></div>
       </div>
-    </div>`
+    </div>
+  `,
+  inputs: ['hero']
 })
-
-export class HeroDetailComponent({
-  function(){console.log("HeroDetailComponent")}
+export class HeroDetailComponent {
   public hero: Hero;
-})
+}
